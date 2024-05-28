@@ -9,7 +9,7 @@ public class Prog1 {
         int x = rand.nextInt(9) + 1;
         int y = rand.nextInt(14 - 3 + 1) + 3;
 
-        System.out.printf(" %.2f\n", Math.PI * x);
-        System.out.printf("%.2f",  y * Math.PI);
+        System.out.printf("%.2f\n",Math.pow(Math.PI, x));
+        System.out.printf("%.2f",  Math.pow(y, Math.PI));
     }
 }
