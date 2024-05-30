@@ -4,7 +4,7 @@ public class Customer {
     private  String firstName;
     private  String lastName;
     private  String socSecurityNum;
-    public  Address billingAddress;
+    private   Address billingAddress;
 
 
     public Address getBillingAddress() {
@@ -12,7 +12,7 @@ public class Customer {
     }
 
 
-    public  Address shippingAddress;
+    private  Address shippingAddress;
 
     public void setShippingAddress(Address shippingAddress) {
         this.shippingAddress = shippingAddress;
