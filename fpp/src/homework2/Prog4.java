@@ -1,6 +1,5 @@
-package HomeWork2;
+package homework2;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Prog4 {

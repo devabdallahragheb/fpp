@@ -1,4 +1,4 @@
-package HomwWork3.Problem2;
+package homwwork3.Problem2;
 
 import java.time.LocalDate;
 import java.time.Period;

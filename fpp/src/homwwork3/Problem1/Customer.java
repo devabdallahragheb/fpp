@@ -1,4 +1,4 @@
-package HomwWork3.Problem1;
+package homwwork3.Problem1;
 
 public class Customer {
     private  String firstName;

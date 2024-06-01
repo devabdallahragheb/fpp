@@ -1,4 +1,4 @@
-package HomwWork3.Problem5;
+package homwwork3.Problem5;
 
 public class Rectangle {
     private final double width;

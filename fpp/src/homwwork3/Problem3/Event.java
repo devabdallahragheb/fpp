@@ -1,9 +1,8 @@
-package HomwWork3.Problem3;
+package homwwork3.Problem3;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
-import java.util.Scanner;
 
 public class Event {
     private String eventName;

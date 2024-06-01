@@ -1,4 +1,4 @@
-package HomeWork2;
+package homework2;
 
 public class Prog6 {
     public static void main(String[] args) {
