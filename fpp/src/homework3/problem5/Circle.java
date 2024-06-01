@@ -1,6 +1,6 @@
 package homework3.problem5;
 
-public class Circle {
+public final class Circle {
     private final double radius;
     public Circle(double radius) {
         this.radius = radius;
