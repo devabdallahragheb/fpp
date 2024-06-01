@@ -3,7 +3,7 @@ package homework3.problem2;
 import java.time.LocalDate;
 import java.time.Period;
 
-import static java.lang.StringTemplate.STR;
+import java.lang.StringTemplate;
 
 public class HeartRates {
     private static final int RESTING_HEART_RATE = 70;
@@ -70,12 +70,12 @@ public class HeartRates {
 
     @Override
     public String toString() {
-        return STR."""
-                    First Name: \{this.firstName}
-                    Last Name: \{this.lastName}
-                    Age: \{this.getAge()}
-                    Date of Birth: \{this.dateOfBirth.toString()}
-                    Maximum Heart Rate: \{this.getMaxHeartRate()}
-                    """;
+        return StringTemplate.STR."""
+                First Name: \{firstName}
+                Last Name: \{lastName}
+                Age: \{getAge()}
+                Date of Birth: \{dateOfBirth}
+                Maximum Heart Rate: \{getMaxHeartRate()}
+            """.toString();
     }
 }
