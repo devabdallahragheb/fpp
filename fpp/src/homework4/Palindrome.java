@@ -1,4 +1,4 @@
-package lab3;
+package homework4;
 
 public class Palindrome {
     public static void main(String[] args) {

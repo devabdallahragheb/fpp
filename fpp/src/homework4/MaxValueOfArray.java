@@ -1,15 +1,15 @@
-package lab3;
+package homework4;
 
 public class MaxValueOfArray {
     public static void main(String[] args) {
-        findMaxValueOfArray(new int[]{5, -3, 6, 1, 9, 4 });
+        System.out.printf("Max value is: %d \n", findMaxValueOfArray(new int[]{5, -3, 6, 1, 9, 4}));
     }
 
-    public static void findMaxValueOfArray(int[] arr) {
+    public static int findMaxValueOfArray(int[] arr) {
         if (arr == null || arr.length == 0) {
-            System.out.println("Array is empty");
+            return Integer.MIN_VALUE;
         } else {
-            System.out.printf("Max value of array: %d \n", findMax(arr, arr.length - 1));
+            return findMax(arr, arr.length - 1);
         }
 
     }

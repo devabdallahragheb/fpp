@@ -1,4 +1,4 @@
-package lab3;
+package homework4;
 
 public class MinCharOfString {
     public static void main(String[] args) {
