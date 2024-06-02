@@ -16,4 +16,11 @@ public class Product {
     public String getProductName() {
         return productName;
     }
+
+    public void printStatus(){
+        System.out.print(STR."""
+                        Name: \{productName}
+                        Price: \{getPrice()}
+                        """);
+    }
 }

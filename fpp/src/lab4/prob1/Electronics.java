@@ -22,4 +22,13 @@ public class Electronics extends Product {
     public double getPrice() {
         return super.getPrice() + warrantyCost;
     }
+
+    @Override
+    public void printStatus() {
+        super.printStatus();
+        System.out.println(STR."""
+                        Warranty: \{warranty} month(s)
+                        Warranty Cost: $\{warrantyCost}
+                        """);
+    }
 }

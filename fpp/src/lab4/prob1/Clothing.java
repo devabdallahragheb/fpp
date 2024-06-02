@@ -22,4 +22,13 @@ public class Clothing extends Product {
     public double getPrice() {
         return super.getPrice() * (100 - discountPercentage) / 100;
     }
+
+    @Override
+    public void printStatus() {
+        super.printStatus();
+        System.out.println(STR."""
+                        Brand: \{brand}
+                        Discount: \{discountPercentage}%
+                        """);
+    }
 }

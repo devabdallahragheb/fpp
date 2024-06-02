@@ -10,27 +10,8 @@ public class TestClass {
         products[4] = new Electronics("Microwave", 249.99, 12, 23);
 
         for (Product product : products) {
-            if (product instanceof Clothing clothing) {
-                System.out.println(STR."""
-                        Name: \{clothing.getProductName()}
-                        Price: $\{clothing.getPrice()}
-                        Brand: \{clothing.getBrand()}
-                        Discount: \{clothing.getDiscountPercentage()}%
-                        """);
-            } else if (product instanceof Electronics electronic) {
-                System.out.println(STR."""
-                        Name: \{electronic.getProductName()}
-                        Price: $\{electronic.getPrice()}
-                        Warranty: \{electronic.getWarranty()} month(s)
-                        Warranty Cost: $\{electronic.getWarrantyCost()}
-                        """);
-            } else if (product instanceof Furniture furniture) {
-                System.out.println(STR."""
-                        Name: \{furniture.getProductName()}
-                        Price: $\{furniture.getPrice()}
-                        Material: \{furniture.getMaterial()}
-                        Shipping Cost: $\{furniture.getShippingCost()}
-                        """);
+            if (product != null ) {
+                product.printStatus();
             }
         }
         System.out.printf("Sum of all products: $%.2f \n", sumProducts(products));

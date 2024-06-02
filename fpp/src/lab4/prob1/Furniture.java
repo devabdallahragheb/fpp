@@ -22,4 +22,13 @@ public class Furniture extends Product {
     public double getShippingCost() {
         return shippingCost;
     }
+
+    @Override
+    public void printStatus() {
+        super.printStatus();
+        System.out.println(STR."""
+                        Material: \{material}
+                        Shipping Cost: $\{shippingCost}
+                        """);
+    }
 }
