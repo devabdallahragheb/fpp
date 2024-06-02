@@ -14,7 +14,7 @@ public class LightSensor implements Sensor {
 
     @Override
     public String getSensorType() {
-        return getClass().getName();
+        return "Light";
     }
 
     @Override
@@ -35,6 +35,6 @@ public class LightSensor implements Sensor {
 
     @Override
     public String performAction() {
-        return lightLevel < 100 ? "an alert to turn on the light" : " Light is sufficient";
+        return lightLevel < 100 ? "Turn on the Light!" : " Light is sufficient";
     }
 }

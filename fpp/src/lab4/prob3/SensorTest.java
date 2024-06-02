@@ -1,5 +1,7 @@
 package lab4.prob3;
 
+import java.time.format.DateTimeFormatter;
+
 public class SensorTest {
     public static void main(String[] args) {
         Sensor[] sensors = new Sensor[5];
@@ -11,7 +13,13 @@ public class SensorTest {
 
         for (Sensor sensor : sensors) {
             if (sensor != null) {
-                System.out.println(sensor.toString());
+                System.out.println(STR."""
+                        Sensor Type: \{sensor.getSensorType()}
+                        Reading: \{sensor.getReading()}
+                        Location: \{sensor.getLocation()}
+                        Last Updated: \{sensor.getLastUpdated().format(DateTimeFormatter.ofPattern("hh:mm a"))}
+                        Action: \{sensor.performAction()}
+                        """);
             }
         }
     }

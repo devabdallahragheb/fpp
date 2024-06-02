@@ -14,7 +14,7 @@ public class TemparatureSensor implements Sensor {
 
     @Override
     public String getSensorType() {
-        return getClass().getName();
+        return "Temperature";
     }
 
     @Override
@@ -35,6 +35,6 @@ public class TemparatureSensor implements Sensor {
 
     @Override
     public String performAction() {
-        return temperature > 30 ? "an alert to turn on the AC" : "an alert to turn on the Heater";
+        return temperature > 30 ? "Turn on the AC!" : "Turn on the Heater!";
     }
 }

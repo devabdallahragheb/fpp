@@ -14,7 +14,7 @@ public class SoundSensor implements Sensor {
 
     @Override
     public String getSensorType() {
-        return getClass().getName();
+        return "Sound";
     }
 
     @Override
@@ -35,6 +35,6 @@ public class SoundSensor implements Sensor {
 
     @Override
     public String performAction() {
-        return soundLevel > 70 ? "“an alert to turn on noise cancellation" : "Sound is within normal range";
+        return soundLevel > 70 ? "Turn on noise cancellation!" : "Sound is within normal range";
     }
 }
