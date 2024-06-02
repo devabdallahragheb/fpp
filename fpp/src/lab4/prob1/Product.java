@@ -1,4 +1,4 @@
-package homework4.prob1;
+package lab4.prob1;
 
 public class Product {
     private String productName;

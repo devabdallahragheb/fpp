@@ -1,4 +1,4 @@
-package homework4.prob2;
+package lab4.prob2;
 
 import java.time.LocalDate;
 import java.util.Scanner;
