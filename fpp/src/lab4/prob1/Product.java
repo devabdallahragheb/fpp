@@ -17,10 +17,11 @@ public class Product {
         return productName;
     }
 
-    public void printStatus(){
-        System.out.print(STR."""
+    @Override
+    public String toString() {
+        return STR."""
                         Name: \{productName}
                         Price: \{getPrice()}
-                        """);
+                        """;
     }
 }

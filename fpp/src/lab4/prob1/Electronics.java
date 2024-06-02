@@ -24,11 +24,10 @@ public class Electronics extends Product {
     }
 
     @Override
-    public void printStatus() {
-        super.printStatus();
-        System.out.println(STR."""
+    public String toString() {
+        return super.toString() + STR."""
                         Warranty: \{warranty} month(s)
                         Warranty Cost: $\{warrantyCost}
-                        """);
+                        """;
     }
 }

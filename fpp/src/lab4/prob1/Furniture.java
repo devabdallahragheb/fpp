@@ -24,11 +24,10 @@ public class Furniture extends Product {
     }
 
     @Override
-    public void printStatus() {
-        super.printStatus();
-        System.out.println(STR."""
+    public String toString() {
+        return super.toString() + STR."""
                         Material: \{material}
                         Shipping Cost: $\{shippingCost}
-                        """);
+                        """;
     }
 }

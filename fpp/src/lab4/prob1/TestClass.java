@@ -10,8 +10,8 @@ public class TestClass {
         products[4] = new Electronics("Microwave", 249.99, 12, 23);
 
         for (Product product : products) {
-            if (product != null ) {
-                product.printStatus();
+            if (product != null) {
+                System.out.println(product.toString());
             }
         }
         System.out.printf("Sum of all products: $%.2f \n", sumProducts(products));
