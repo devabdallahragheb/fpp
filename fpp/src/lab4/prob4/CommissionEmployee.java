@@ -1,8 +1,8 @@
 package lab4.prob4;
 
 public class CommissionEmployee extends Employee{
-    private double grossSales;
-    private double commissionRate;
+    private final double grossSales;
+    private final double commissionRate;
 
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
         super(firstName, lastName, socialSecurityNumber);
