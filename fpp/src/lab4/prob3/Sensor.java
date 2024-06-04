@@ -3,7 +3,7 @@ package lab4.prob3;
 import java.time.LocalDateTime;
 
 public interface Sensor {
-    public String getSensorType();
+    String getSensorType();
 
     double getReading();
 

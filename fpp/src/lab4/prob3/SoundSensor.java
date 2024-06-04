@@ -3,9 +3,9 @@ package lab4.prob3;
 import java.time.LocalDateTime;
 
 public class SoundSensor implements Sensor {
-    private HomeLocation location;
+    private final HomeLocation location;
     private LocalDateTime lastUpdated;
-    private double soundLevel;
+    private final double soundLevel;
 
     public SoundSensor(HomeLocation location, double soundLevel) {
         this.location = location;

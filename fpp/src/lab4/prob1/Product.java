@@ -1,8 +1,8 @@
 package lab4.prob1;
 
 public class Product {
-    private String productName;
-    private double price;
+    private final String productName;
+    private final double price;
 
     public Product(String productName, double price) {
         this.productName = productName;
