@@ -1,9 +1,9 @@
 package lab4.prob4;
 
 public abstract class Employee {
-    private String firstName;
-    private String lastName;
-    private String socialSecurityNumber;
+    private final String firstName;
+    private final String lastName;
+    private final String socialSecurityNumber;
 
     public Employee(String firstName, String lastName, String socialSecurityNumber) {
         this.firstName = firstName;

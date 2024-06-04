@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class DeptEmployee {
     private String name;
-    private double salary;
+    private final double salary;
     private LocalDate hiredDate;
     public DeptEmployee(String name, double salary, LocalDate hiredDate) {
         this.name = name;
