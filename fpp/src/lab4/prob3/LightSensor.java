@@ -3,9 +3,9 @@ package lab4.prob3;
 import java.time.LocalDateTime;
 
 public class LightSensor implements Sensor {
-    private HomeLocation location;
+    private final HomeLocation location;
     private LocalDateTime lastUpdated;
-    private double lightLevel;
+    private final double lightLevel;
 
     public LightSensor(HomeLocation location, double lightLevel) {
         this.location = location;

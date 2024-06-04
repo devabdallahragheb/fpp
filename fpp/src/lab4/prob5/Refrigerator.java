@@ -1,7 +1,7 @@
 package lab4.prob5;
 
 public class Refrigerator implements Electronic {
-    private int temperature;
+    private final int temperature;
     public Refrigerator(int temperature) {
         this.temperature = temperature;
     }

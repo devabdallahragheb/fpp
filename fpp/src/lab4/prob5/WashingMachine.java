@@ -1,7 +1,7 @@
 package lab4.prob5;
 
 public class WashingMachine implements Electronic{
-    private int loadCapacity;
+    private final int loadCapacity;
 
     public WashingMachine(int loadCapacity) {
         this.loadCapacity = loadCapacity;

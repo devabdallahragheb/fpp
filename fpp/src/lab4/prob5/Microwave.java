@@ -1,7 +1,7 @@
 package lab4.prob5;
 
 public class Microwave implements Electronic {
-    private int powerLevel;
+    private final int powerLevel;
 
     public Microwave(int powerLevel) {
         this.powerLevel = powerLevel;
