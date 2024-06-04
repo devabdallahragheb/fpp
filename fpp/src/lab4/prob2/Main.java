@@ -37,6 +37,9 @@ public class Main {
     }
 
     private static double getAverageSalary(DeptEmployee[] employees) {
+        if(employees == null || employees.length == 0) {
+            return 0;
+        }
         return getTotalSalary(employees) / employees.length;
     }
 }

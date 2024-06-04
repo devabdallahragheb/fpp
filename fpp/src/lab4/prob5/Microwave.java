@@ -1,6 +1,6 @@
 package lab4.prob5;
 
-public class Microwave extends Electronic {
+public class Microwave implements Electronic {
     private int powerLevel;
 
     public Microwave(int powerLevel) {

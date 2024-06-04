@@ -1,6 +1,6 @@
 package lab4.prob5;
 
-public class Refrigerator extends Electronic {
+public class Refrigerator implements Electronic {
     private int temperature;
     public Refrigerator(int temperature) {
         this.temperature = temperature;

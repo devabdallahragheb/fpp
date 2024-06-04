@@ -1,6 +1,6 @@
 package lab4.prob5;
 
-public class WashingMachine extends Electronic{
+public class WashingMachine implements Electronic{
     private int loadCapacity;
 
     public WashingMachine(int loadCapacity) {
