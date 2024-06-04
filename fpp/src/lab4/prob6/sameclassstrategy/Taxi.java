@@ -17,6 +17,6 @@ class Taxi extends Car {
         if (obj == null) return false;
         if (getClass() != obj.getClass()) return false;
         Taxi taxi = (Taxi) obj;
-        return taxi.getBrand().equals(this.getBrand()) && taxi.getNumber() == this.getNumber();
+        return taxi.getBrand().equals(this.getBrand()) && taxi.getNumber() == this.number;
     }
 }
