@@ -10,6 +10,7 @@ class CompositionTest {
         System.out.println(taxi.equals(cheapTaxi));
         System.out.println(taxi.equals(luxuryTaxi));
         System.out.println(cheapTaxi.equals(luxuryTaxi));
+        System.out.println(luxuryTaxi.equals(car));
 
     }
 }
