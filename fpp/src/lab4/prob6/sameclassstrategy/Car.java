@@ -14,7 +14,8 @@ class Car {
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
-        if (!(obj instanceof Car car)) return false;
-        return car.getBrand().equals(this.getBrand());
+        if (getClass() != obj.getClass()) return false;
+        Car car = (Car) obj;
+        return car.brand.equals(this.brand);
     }
 }

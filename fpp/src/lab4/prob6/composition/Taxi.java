@@ -20,8 +20,7 @@ class Taxi {
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
-        if (getClass() != obj.getClass()) return false;
-        Taxi taxi = (Taxi) obj;
-        return taxi.getCar().equals(this.getCar()) && taxi.getNumber() == this.getNumber();
+        if (!(obj instanceof Taxi taxi)) return false;
+        return taxi.getCar().equals(this.car) && taxi.getNumber() == this.number;
     }
 }
