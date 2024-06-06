@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Test {
     public static void main(String[] args) {
         DeptEmployee[] data = DeptEmployeeData.getDeptData();
-        Arrays.sort(data, DeptEmployee.getComparator());
+        DeptEmployee employee = data[0];
+        Arrays.sort(data, employee.getComparator());
         System.out.println(Arrays.toString(data));
     }
 }
