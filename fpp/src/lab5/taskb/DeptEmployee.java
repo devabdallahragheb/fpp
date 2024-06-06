@@ -14,14 +14,14 @@ public class DeptEmployee {
         this.hireDate = hireDate;
     }
 
-    private static class NameComparator implements Comparator<DeptEmployee> {
+    private class NameComparator implements Comparator<DeptEmployee> {
         @Override
         public int compare(DeptEmployee employee1, DeptEmployee employee2) {
             return employee1.getName().compareTo(employee2.getName());
         }
     }
 
-    static NameComparator getComparator() {
+    public NameComparator getComparator() {
         return new NameComparator();
     }
 
