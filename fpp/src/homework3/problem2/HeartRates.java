@@ -70,12 +70,12 @@ public class HeartRates {
 
     @Override
     public String toString() {
-        return StringTemplate.STR."""
+        return STR."""
                 First Name: \{firstName}
                 Last Name: \{lastName}
                 Age: \{getAge()}
                 Date of Birth: \{dateOfBirth}
                 Maximum Heart Rate: \{getMaxHeartRate()}
-            """.toString();
+            """;
     }
 }
