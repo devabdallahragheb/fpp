@@ -36,7 +36,7 @@ public class Main {
 
     //IMPLEMENT
     public static List<EmployeeData> combine(List<Staff> staffs, List<Teacher> teachers) {
-        ArrayList<EmployeeData> employees = new ArrayList<>();
+        List<EmployeeData> employees = new ArrayList<>();
         employees.addAll(staffs);
         employees.addAll(teachers);
         return employees;
