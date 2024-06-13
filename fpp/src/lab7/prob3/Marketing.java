@@ -1,43 +1,43 @@
 package lab7.prob3;
 
 public class Marketing {
-    private String employeename;
-    private String productname;
-    private double salesamount;
+    private String employeeName;
+    private String productName;
+    private double salesAmount;
 
-    public Marketing(String employeename, String productname, double salesamount) {
-        this.employeename = employeename;
-        this.productname = productname;
-        this.salesamount = salesamount;
+    public Marketing(String employeeName, String productName, double salesAmount) {
+        this.employeeName = employeeName;
+        this.productName = productName;
+        this.salesAmount = salesAmount;
     }
 
-    public String getEmployeename() {
-        return employeename;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
-    public void setEmployeename(String employeename) {
-        this.employeename = employeename;
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
-    public String getProductname() {
-        return productname;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setProductname(String productname) {
-        this.productname = productname;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public double getSalesamount() {
-        return salesamount;
+    public double getSalesAmount() {
+        return salesAmount;
     }
 
-    public void setSalesamount(double salesamount) {
-        this.salesamount = salesamount;
+    public void setSalesAmount(double salesAmount) {
+        this.salesAmount = salesAmount;
     }
 
     @Override
     public String toString() {
-        return employeename + " " + productname + " " + salesamount;
+        return employeeName + " " + productName + " " + salesAmount;
     }
 
     // g. Override the equals() method inside Marketing.java
@@ -46,7 +46,7 @@ public class Marketing {
         if (obj == null)
             return false;
         if (obj instanceof Marketing marketing) {
-            return marketing.employeename.equals(employeename) && marketing.productname.equals(productname) && marketing.salesamount == salesamount;
+            return marketing.employeeName.equals(employeeName) && marketing.productName.equals(productName) && marketing.salesAmount == salesAmount;
         }
         return false;
     }
