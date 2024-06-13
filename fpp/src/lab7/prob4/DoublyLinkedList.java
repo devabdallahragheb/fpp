@@ -120,12 +120,10 @@ public class DoublyLinkedList {
         // Print  list after removing Steve
         System.out.println(STR."Remove Steve: \{list.removeFirstMatch("Steve")}");
         System.out.println(list);
-        list.printReverse();
 
         // Print  list after removing first node
         System.out.println(STR."Remove first node: \{list.removeFirstNode()}");
         System.out.println(list);
-        list.printReverse();
     }
 
     private class Node {
