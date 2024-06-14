@@ -41,11 +41,11 @@ public class Employee {
         return "(" + ssn + ": " + name + ", " + salary + ")";
     }
 
-    @Override
-    public boolean equals(Object ob) {
-        if (ob == null) return false;
-        if (!(ob instanceof Employee)) return false;
-        Employee e = (Employee) ob;
-        return e.ssn.equals(ssn);
-    }
+//    @Override
+//    public boolean equals(Object ob) {
+//        if (ob == null) return false;
+//        if (!(ob instanceof Employee)) return false;
+//        Employee e = (Employee) ob;
+//        return e.ssn.equals(ssn);
+//    }
 }
