@@ -1,7 +1,6 @@
 package lab7.prob3;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class Test {
@@ -42,12 +41,12 @@ public class Test {
         System.out.println(marketingList.get(0));
 
         // h. Sort the list in natural order for the field salesamount using comparator interface.
-        marketingList.sort((o1, o2) -> Double.compare(o1.getSalesamount(), o2.getSalesamount()));
+        marketingList.sort((o1, o2) -> Double.compare(o1.getSalesAmount(), o2.getSalesAmount()));
         System.out.println(marketingList);
 
         // i. Sort the list in natural order using employeename with the criteria of the employee who achieves more than $1000 of salesamount
         List<Marketing> filterList = listMoreThan1000(marketingList);
-        filterList.sort((o1, o2) -> o1.getEmployeename().compareTo(o2.getEmployeename()));
+        filterList.sort((o1, o2) -> o1.getEmployeeName().compareTo(o2.getEmployeeName()));
         System.out.println(filterList);
     }
 
@@ -58,7 +57,7 @@ public class Test {
             return list;
         List<Marketing> result = new ArrayList<>();
         for (Marketing marketing : list) {
-            if (marketing.getSalesamount() > 1000) {
+            if (marketing.getSalesAmount() > 1000) {
                 result.add(marketing);
             }
         }
